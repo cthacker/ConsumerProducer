@@ -16,7 +16,7 @@ The Producer message is printed to the console by the consumers (as required by 
 message displaying on the website as well. Additionally, the first thing printed in the console is
 the number of consumers and how many keepAlive messages they will send.
 
-![Screenshot of the program running on Chrome](http://screenshot/Sample-screenshot.png)
+![Screenshot of the program running on Chrome](screenshot/Sample-screenshot.png)
 
 
 # How to Install
