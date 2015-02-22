@@ -16,6 +16,8 @@ The Producer message is printed to the console by the consumers (as required by 
 message displaying on the website as well. Additionally, the first thing printed in the console is
 the number of consumers and how many keepAlive messages they will send.
 
+![Screenshot of the program running on Chrome](http://screenshot/Sample-screenshot.png)
+
 
 # How to Install
 
@@ -28,7 +30,7 @@ Next, you will need to clone this GitHub repository by doing:
     > git clone https://github.com/cthacker/ConsumerProducer.git
 
 Finally, to run a local webserver and demo this project go into the project folder that you cloned and type:
-meteor. That's it all done. Point your browser to http://localhost:3000/ and be amazed!
+meteor. That's it all done. Point your browser to [localhost](http://localhost:3000/) and be amazed!
 
 If you want to restart just refresh the page to cancel the current progress, input a new Consumer
 number and submit. It will overwrite the old data and reactively show the new "run"
@@ -37,12 +39,11 @@ number and submit. It will overwrite the old data and reactively show the new "r
 # What if something goes wrong?
 
 1) It won't
-B) If for some reason something weird is going on (could only be due to quantum effects ... not a bug) run:
+
+B) If for some reason something weird is going on (could only be due to quantum effects ... not a bug) run the following to fully restart.
     
     >meteor reset
     >meteor 
-
-to fully restart the project.
 
 
 Issues
