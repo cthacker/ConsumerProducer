@@ -1,0 +1,51 @@
+body {
+    background: #eee;
+    color: #666666;
+}
+
+.navbar {
+    margin-bottom: 10px; 
+}
+.navbar .navbar-inner {
+    text-shadow: 0 1px 0 #fff;
+    padding-top: 10px;
+    border-radius: 0px 0px 3px 3px; 
+    color: #777;
+    display: block;
+}
+
+#main{
+    position: relative;
+}
+
+.posts {
+    width:100%;
+
+}
+
+.post { 
+    position: relative;
+    opacity: 1;
+    background: #fff;
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.15);
+}
+
+.post:before, .post:after {
+    content: "";
+    display: table;
+}
+.post:after {
+    clear:both;
+}
+
+.post .post-inner {
+    float: left;
+    color: #08c;
+    font-weight: 500;
+    display: inline-block;
+    line-height: 1.4;
+    font-size: 18px;
+}

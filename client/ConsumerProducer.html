@@ -1,0 +1,51 @@
+<head>
+  <title>Consumer and Producer</title>
+</head>
+
+<body>
+  <div class="container">
+      <div class="navbar ">
+          <div class="navbar-inner">
+              <p><h2>Welcome to the Consumer creator!</h2></p>
+          </div>
+      </div>
+
+      <div>
+          {{> getConsumer}}
+      </div>
+
+      <div id="main">
+          {{>messages}}
+      </div>
+  
+  </div>
+</body>
+
+<template name = "getConsumer">
+  <div class="posts">
+    <div class="post">
+      
+      <form class="form-inline" style="margin:0">
+        <div class="form-group">
+          <label> Input number of consumers between 1 and 12: &nbsp;</label>
+          <input id="inputNumConsumers" type="number" min="1" max="12" >
+        <button type="submit" class="btn btn-default">Submit</button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</template>
+
+<template name = "messages">
+  <div class="posts">
+    {{#each messages}}
+    <div class="post">
+      <div class="post-inner">
+        <span>{{msg}}{{id}} {{msg2}} {{date}}</span>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</template>
+
