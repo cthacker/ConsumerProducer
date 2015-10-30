@@ -6,7 +6,8 @@ if (Meteor.isClient) {
     this.keepAlive = keepAlive
     
   }
-      
+  
+
   // This is the main loop started on form submission
   Template.getConsumer.events({
     'submit form': function(event, template){
@@ -26,7 +27,7 @@ if (Meteor.isClient) {
           consumerArray.push(new Consumer(id, keepAlive));
           console.log("Created Consumer " + id + " with " + keepAlive + " messages to the producer")
       }
-      
+                        
       //Registers Consumers
       registerCon(consumerArray);
       // 5 seconds after Consumer registers (registerCon) we ping that we are alive every 5 seconds
